@@ -1,0 +1,5 @@
+comandos         | descripcion
+-----------------|---------------------------------------------
+ghci             | comando para ejecutar el modo interactivo
+:l misFunciones  | comando para cargar las funciones en el sitema
+:r               | comando para relanzar las funciones escritas
