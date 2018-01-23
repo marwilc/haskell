@@ -1,0 +1,9 @@
+operador              | descripcion
+----------------------|---------
+++                    | concatena dos listas o cadenas de caracteres: [1,2,3,4] ++ [9,10,11,12] = [1,2,3,4,9,10,11,12] "hello" ++ " " ++ "world"
+:                     | inserta al principio de una lista 5:[1,2,3,4,5] = [5,1,2,3,4,5]
+not                   | negacion
+True                  | verdadero
+False                 | falso
+==                    | igualdad ejemplo: 5 == 5 es igual a True
+/=                    | distinto ejemplo: 5 /= 4 es igual a False

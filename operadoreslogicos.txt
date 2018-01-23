@@ -1,0 +1,9 @@
+operador              | descripcion
+----------------------|---------
+&&                    | es el y logico(igual que en lenguaje c)
+||                    | es o logico (igual que en c)
+not                   | negacion
+True                  | verdadero
+False                 | falso
+==                    | igualdad ejemplo: 5 == 5 es igual a True
+/=                    | distinto ejemplo: 5 /= 4 es igual a False

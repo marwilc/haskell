@@ -1,0 +1,8 @@
+operador              | descripcion
+----------------------|---------
++                     | suma ejemplo: 5 + 5 es igual a 10
+-                     | resta
+*                     | producto
+**                    | potencia con exponente decimal
+^                     | potencia con exponente entero
+/                     | division real

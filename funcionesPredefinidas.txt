@@ -1,0 +1,10 @@
+funcion               | descripcion
+----------------------|---------
+succ                  | devuelve el sucesor de un numero: ejemplo: succ 8 es igual 9
+min                   | devuelve el minimo de dos parametros: ejemplo min 9 10 es igual a 9
+max                   | devuelve el maximo de dos parametros: ejemplo max 3.4 3.2 es igual a 3.4
+div                   | realiza la division (es una funcion infija): ejemplo 5 `div` 5 es igual a 1 (ojo: la palabra div siempre tiene que ir entre acentos ` `)
+
+toda funcion se llamara de forma prefija. primero se llama la funcion, luego se coloca un espacion y despues el parametro
+ejemplo: ghci> funcion parametro
+ejemplo: ghci> funcion parametro1 parametro2
