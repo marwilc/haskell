@@ -2,8 +2,41 @@ operador              | descripcion
 ----------------------|---------
 ++                    | concatena dos listas o cadenas de caracteres: [1,2,3,4] ++ [9,10,11,12] = [1,2,3,4,9,10,11,12] "hello" ++ " " ++ "world"
 :                     | inserta al principio de una lista 5:[1,2,3,4,5] = [5,1,2,3,4,5]
-not                   | negacion
-True                  | verdadero
-False                 | falso
-==                    | igualdad ejemplo: 5 == 5 es igual a True
-/=                    | distinto ejemplo: 5 /= 4 es igual a False
+!!                    | comando para obtener un elemento de la lista sabiendo su indice ejemplo: "Pedro" !! 0 obtiene la letra P todos los indices comienzan en 0
+head                  | toma una lista y devuelve su cabeza. La cabeza de una lista es básicamente el primer elemento.ejemplo: head [2,3] eso retornara 2
+tail                  | toma una lista y devuelve su cola. En otros palabras, corta la cabeza de la lista. ejemplo: tail [5,4,3,2,1] retornara [4,3,2,1]
+last                  | toma una lista y devuelve su último elemento. ejemplo: last [5,4,3,2,1] retornara 1
+init                  | toma una lista y devuelve toda la lista excepto su último elemento ejemplo: init [5,4,3,2,1] retonara [5,4,3,2]
+length                | toma una lista y obviamente devuelve su tamaño. length [5,4,3,2,1] retornara 5
+null                  | comprueba si una lista está vacía. Si lo está, devuelve True, en caso contrario devuelve False. Usa esta función en lugar de xs == [] (si tienes una lista que se llame xs).
+reverse               | pone al reves una lista reverse [5,4,3,2,1] retornara [1,2,3,4,5]
+take                  | toma un número y una lista y extrae dicho número de elementos de una lista. Observa: take 3 [5,4,3,2,1] retorna [5,4,3]
+drop                  | funciona de forma similar, solo que quita un número de elementos del comienzo de la lista.
+maximum               | toma una lista de cosas que se pueden poner en algún tipo de orden y devuelve el elemento más grande: maximum [1,9,2,3,4] retornara 9
+minimum               | devuelve el mas pequeño: minimum [8,4,2,1,5,6] retornara 1
+sum                   | toma una lista de números y devuelve su suma: sum [5,2,1,6,3,2,5,7] retornara 31
+product               | toma una lista de números y devuelve su producto: product [6,2,1,2] retornara 24
+elem                  | toma una cosa y una lista de cosas y nos dice si dicha cosa es un elemento de la lista. Normalmente, esta función es llamada de forma infija porque resulta más fácil de leer: 4 `elem` [3,4,5,6] retorna True
+cycle                 | toma una lista y crea un ciclo de listas iguales infinito. Si intentáramos mostrar el resultado nunca terminaría así que hay que cortarlo en alguna parte ejemplo: take 10 (cycle [1,2,3]) generará [1,2,3,1,2,3,1,2,3,1]
+repeat                | toma un elemento y produce una lista infinita que contiene ese único elemento repetido. Es como hacer un ciclo de una lista con un solo elemento. take 10 (repeat 5) generará [5,5,5,5,5,5,5,5,5,5]
+replicate             | lo mismo que la anterior pero con un parametro cuantas repeticiones y otro del valor a repetir: replicate 3 10 devuelve [10,10,10].
+
+let a = 1 se usa para definir el nombre una lista en GHCi es igual a hacer a = 1 en un fichero y luego cargarlo
+
+ejemplo: let lostNumber = [5,63,2,3] se usa corchetes para definir lo que estara dentro de la lista separados por comas
+
+existen listas de listas ejemplo: let b = [[1,2,3,4],[5,3,3,3],[1,2,2,3,4],[1,2,3]]
+
+rangos de listas
+
+para representar los numeros del 1 al 20 en una lista se puede hacer esta forma
+[1..20] es lo mismo que [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+['a'..'z'] es lo mismo que "abcdefghijklmnopqrstuvwxyz"
+['K'..'Z'] es lo mismo que "KLMNOPQRSTUVWXYZ"
+
+si queremos numeros impares se hace asi:
+[2,4..20] es lo mismo que [2,4,6,8,10,12,14,16,18,20]
+impares
+[3,6..20] es lo mismo que [3,6,9,12,15,18]
+
+Para obtener una lista con todos los números desde el 20 hasta el 1 no podemos usar [20..1], debemos utilizar [20,19..1].
